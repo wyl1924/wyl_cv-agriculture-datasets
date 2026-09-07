@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "cotton_bollworm_detector_v2_seed",
+  "slug": "cotton-bollworm-det-v2",
+  "task": "detection",
+  "classes": [
+    "cotton_bollworm"
+  ],
+  "total_images": 3173,
+  "source_counts": {
+    "sciencedb_cottoninsect_v2": 3173
+  },
+  "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+  "limitations": [
+    "Cotton-field auxiliary seed; not maize-field coverage.",
+    "Validation uses an exact/near-duplicate proxy split, not an independent site/date holdout.",
+    "The 0.25 confidence filter is uncalibrated and every box requires review."
+  ],
+  "image_strata_counts": {
+    "train": {
+      "positive": 426,
+      "negative": 2112
+    },
+    "val": {
+      "positive": 107,
+      "negative": 528
+    }
+  },
+  "target_box_counts": {
+    "train": {
+      "cotton_bollworm": 426
+    },
+    "val": {
+      "cotton_bollworm": 107
+    }
+  }
+}

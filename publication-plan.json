@@ -1,0 +1,169 @@
+{
+  "schema_version": 1,
+  "release_id": "agriculture-v2-research-datasets-2026-09-07",
+  "scope": "Five frozen train/val datasets used by the selected V2 research candidates; no models, application code, raw archives, OOD, reserve, quarantine, review, cache, superseded data, or unfinished sources.",
+  "expected_total_images": 29878,
+  "expected_total_original_bytes": 10716049266,
+  "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+  "datasets": [
+    {
+      "id": "corn_leaf_disease_v2_research_candidate",
+      "slug": "corn-leaf-disease-v2",
+      "task": "classification",
+      "expected_images": 6519,
+      "expected_original_bytes": 2213806754,
+      "manifest_sha256": "0acb0576bd59a0836ab5c724d20adc2382a446c571f13291d07fc02ab01e7ca0",
+      "classes": ["bacterial_leaf_streak", "common_rust", "curvularia_leaf_spot", "eyespot", "gray_leaf_spot", "healthy", "northern_leaf_blight", "southern_leaf_blight", "southern_rust"],
+      "sources": {"plantvillage": 3844, "cornleaf": 219, "idadp": 99, "makerere": 2000, "sb4": 203, "tom2024": 154},
+      "limitations": ["Research-only; no independent China-field blind test.", "Several rare-class validation supports are only 19-31 images.", "No calibrated unknown/OOD rejection threshold."]
+    },
+    {
+      "id": "corn_field_pest_v2_research_candidate",
+      "slug": "corn-field-pest-v2",
+      "task": "classification",
+      "expected_images": 2898,
+      "expected_original_bytes": 405100373,
+      "manifest_sha256": "11cb0ce9e784ac88725d8e58e5428ac8e8304dc320e8338f8928255a3f4e0012",
+      "classes": ["fall_armyworm", "grasshopper_unknown", "healthy", "leaf_beetle_unknown", "maize_aphid_unknown"],
+      "sources": {"ccmt": 2084, "tom2024": 737, "yeesi": 77},
+      "limitations": ["Research-only coarse whole-image classification.", "Grasshopper, leaf beetle, and aphid labels intentionally make no species claim.", "No calibrated unknown/OOD rejection threshold."]
+    },
+    {
+      "id": "maize_herbivory_damage_v2_research_candidate",
+      "slug": "maize-herbivory-damage-v2",
+      "task": "classification",
+      "expected_images": 14577,
+      "expected_original_bytes": 86965818,
+      "manifest_sha256": "a29c657f5f46937c320a7fc760ae22248563128d4adcfb627e653ffcb36844ad",
+      "classes": ["frugiperda", "ipsilon", "litura", "separata"],
+      "sources": {"zenodo_maize_herbivory_v1_1_0": 14577},
+      "limitations": ["Laboratory flatbed-scanned feeding damage, not field imagery.", "Labels identify the controlled feeding treatment; insect bodies need not be visible.", "Only 132 physical-leaf capture groups and no calibrated OOD rejection threshold."]
+    },
+    {
+      "id": "cotton_bollworm_detector_v2_seed",
+      "slug": "cotton-bollworm-det-v2",
+      "task": "detection",
+      "expected_images": 3173,
+      "expected_original_bytes": 3021305467,
+      "manifest_sha256": "0631454444e9eafd2ee6f3cbfe0ce00f47c177ea25f811f995e5333768cbdc24",
+      "classes": ["cotton_bollworm"],
+      "expected_image_strata_counts": {"train": {"positive": 426, "negative": 2112}, "val": {"positive": 107, "negative": 528}},
+      "expected_target_box_counts": {"train": 426, "val": 107},
+      "sources": {"sciencedb_cottoninsect_v2": 3173},
+      "limitations": ["Cotton-field auxiliary seed; not maize-field coverage.", "Validation uses an exact/near-duplicate proxy split, not an independent site/date holdout.", "The 0.25 confidence filter is uncalibrated and every box requires review."]
+    },
+    {
+      "id": "karaagro_faw_larva_detector_v2_1_research_candidate",
+      "slug": "karaagro-faw-larva-det-v2-1",
+      "task": "detection",
+      "expected_images": 2711,
+      "expected_original_bytes": 4988870854,
+      "manifest_sha256": "7f88128c94c66bc6d26228ea6855af1e0f4161562d70dbfb6b21e6957575d715",
+      "classes": ["fall_armyworm_larva"],
+      "expected_image_strata_counts": {"train": {"positive": 1071, "negative": 1072}, "val": {"positive": 284, "negative": 284}},
+      "expected_target_box_counts": {"train": 1098, "val": 284},
+      "sources": {"harvard_karaagro_v4.1": 2711},
+      "limitations": ["Human-assisted internal trial only; the earlier strict smoke gate remains failed.", "Ghana-source internal split, not an independent China-field blind test.", "Only visible larvae are outputs; damage, frass, and eggs are excluded."]
+    }
+  ],
+  "sources": {
+    "plantvillage": {
+      "title": "PlantVillage Dataset",
+      "version": "Git commit 7f7ecc7e1eaca78107e3affe7cb5abd9427e139a",
+      "url": "https://github.com/spMohanty/PlantVillage-Dataset/tree/7f7ecc7e1eaca78107e3affe7cb5abd9427e139a",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "authors": ["Sharada P. Mohanty", "David P. Hughes", "Marcel Salathé"]
+    },
+    "cornleaf": {
+      "title": "CornLeafDiseaseCollection",
+      "version": "1",
+      "doi": "10.17632/w56xxnykcc.1",
+      "url": "https://data.mendeley.com/datasets/w56xxnykcc/1",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Leonela Marilù Murillo Parraga", "Carlos Alfredo Silva Villafuerte"]
+    },
+    "idadp": {
+      "title": "IDADP - Corn Disease Image Description Dataset",
+      "version": "V1",
+      "doi": "10.57760/sciencedb.21290",
+      "url": "https://doi.org/10.57760/sciencedb.21290",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Lei, Chen", "Boru, Shi", "Yuan, Yuan"]
+    },
+    "makerere": {
+      "title": "Makerere University Maize Image Dataset",
+      "version": "2.1",
+      "doi": "10.7910/DVN/LPGHKK",
+      "url": "https://doi.org/10.7910/DVN/LPGHKK",
+      "license": "CC BY (datasheet; version not specified)",
+      "license_url": "https://doi.org/10.7910/DVN/LPGHKK",
+      "authors": ["Babirye, Claire", "Nakatumba-Nabende, Joyce", "Namanya, Gloria", "Mutebi, Chodrine", "Ebellu, Moses", "Murungi, Joab", "Tobius, Saolo", "Ssemwogerere, Jonah", "Nakayima, Annet", "Nabagereka, Deborah", "Asasira, Judith", "Kanyesigye, Ruth"]
+    },
+    "sb4": {
+      "title": "An Open-Source Multi-Format Maize Leaf Image Dataset for Disease Detection and Classification",
+      "version": "1",
+      "doi": "10.17632/sb4wwjs8bz.1",
+      "url": "https://data.mendeley.com/datasets/sb4wwjs8bz/1",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Golam Rabbany", "Uswatun Hasana hashi", "Md. Nymur Rahman", "Md.Reza-E-Rabbi Adnan"]
+    },
+    "tom2024": {
+      "title": "TOM2024",
+      "version": "1",
+      "doi": "10.17632/3d4yg89rtr.1",
+      "url": "https://data.mendeley.com/datasets/3d4yg89rtr/1",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Obed Appiah", "Kwame Oppong Hackman", "Belko Abdoul Aziz Diallo", "Kehinde O Ogunjobi", "Valentin Ouedraogo", "Momo Bebe", "Diakalia SON"]
+    },
+    "ccmt": {
+      "title": "Dataset for Crop Pest and Disease Detection",
+      "version": "1",
+      "doi": "10.17632/bwh3zbpkpv.1",
+      "url": "https://data.mendeley.com/datasets/bwh3zbpkpv/1",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Patrick Mensah Kwabena", "Vivian Akoto-Adjepong", "Kwabena Adu", "Mighty Abra Ayidzoe", "Elvis Asare Bediako", "Owusu Nyarko-Boateng", "Samuel Boateng", "Esther Fobi Donkor", "Faiza Umar Bawah", "Nicodemus Songose Awarayi", "Peter Nimbe", "Isaac Kofi Nti", "Muntala Abdulai", "Remember Roger Adjei", "Michael Opoku"]
+    },
+    "yeesi": {
+      "title": "The YEESI Lab Dataset",
+      "version": "Zenodo record 7893938",
+      "doi": "10.5281/zenodo.7893938",
+      "url": "https://doi.org/10.5281/zenodo.7893938",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Fue, Kadeghe", "Massawe, Dickson", "Barakabitze, Alcardo", "Geofrey, Anna", "Lebalwa, Bertha", "Lyimo, Neema", "Mwaipaja, Faraja", "Jonathan, Joan", "Mbacho, Susan", "Sanga, Camilius", "Rains, Glen"]
+    },
+    "zenodo_maize_herbivory_v1_1_0": {
+      "title": "Maize Leaf Herbivory Dataset",
+      "version": "v1.1.0",
+      "doi": "10.5281/zenodo.22249046",
+      "url": "https://doi.org/10.5281/zenodo.22249046",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Qin, Zeliang", "Xu, Xinru", "Zhang, Qibao", "Jia, Jieru", "Zhu, Zheqing", "Zhang, Min"]
+    },
+    "sciencedb_cottoninsect_v2": {
+      "title": "CottonInsect",
+      "version": "2.0.0",
+      "doi": "10.57760/sciencedb.j00001.00866",
+      "url": "https://doi.org/10.57760/sciencedb.j00001.00866",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "authors": ["Yang Manxian", "Cheng Yanhong", "Li Yuqing", "Li Yongke"]
+    },
+    "harvard_karaagro_v4.1": {
+      "title": "The KaraAgro AI Maize Dataset",
+      "version": "4.1",
+      "doi": "10.7910/DVN/CXUMDS",
+      "url": "https://doi.org/10.7910/DVN/CXUMDS",
+      "license": "CC BY (datasheet; version not specified)",
+      "license_url": "https://doi.org/10.7910/DVN/CXUMDS",
+      "authors": ["Akogo, Darlington", "Samori, Issah", "Acquaye, Christabel", "Addo, Michael", "Amoako, Emmanuel", "Ezroa-Cudjoe, Frank", "Buaba, Jerry", "Seloame, Tatu Nyaku", "Mavis, Agyeiwaa", "Bright, Hodasi", "Kezia, Gyasi-Darko", "Ababio, Yao Owusu", "Clinton, Darkwa Asare"]
+    }
+  }
+}

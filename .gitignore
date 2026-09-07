@@ -1,0 +1,4 @@
+/assets/
+/*.partial
+/.private-*
+/remote-download-verification/

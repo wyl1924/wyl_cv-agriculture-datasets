@@ -1,0 +1,122 @@
+[
+  {
+    "name": "corn-leaf-disease-v2-part-001.tar",
+    "dataset_slug": "corn-leaf-disease-v2",
+    "part": 1,
+    "members": 2937,
+    "size": 942858240,
+    "sha256": "c7d97cd7eeadd0e7cd30babd6a659181a97624c9a3b9bde769c058fe991cd398"
+  },
+  {
+    "name": "corn-leaf-disease-v2-part-002.tar",
+    "dataset_slug": "corn-leaf-disease-v2",
+    "part": 2,
+    "members": 2681,
+    "size": 943646720,
+    "sha256": "76f941d9e038bf569462f826f69abdd9b9e3508203ef95152aae9036b52af657"
+  },
+  {
+    "name": "corn-leaf-disease-v2-part-003.tar",
+    "dataset_slug": "corn-leaf-disease-v2",
+    "part": 3,
+    "members": 901,
+    "size": 253480960,
+    "sha256": "1d9635cb0d454571da11d418db50d3d0f42ed277c93f981aadcbdfd7a19e4200"
+  },
+  {
+    "name": "corn-field-pest-v2-part-001.tar",
+    "dataset_slug": "corn-field-pest-v2",
+    "part": 1,
+    "members": 2898,
+    "size": 402186240,
+    "sha256": "4abc66cca1e9b28a979ebb3305ded449fbb08bbbec8f4cac5a795f2f4440958a"
+  },
+  {
+    "name": "maize-herbivory-damage-v2-part-001.tar",
+    "dataset_slug": "maize-herbivory-damage-v2",
+    "part": 1,
+    "members": 14577,
+    "size": 97525760,
+    "sha256": "10fab8bfb644cb9bb3c39956603b3b8f7cdcb27c9068b265206b9556b6b0b9ee"
+  },
+  {
+    "name": "cotton-bollworm-det-v2-part-001.tar",
+    "dataset_slug": "cotton-bollworm-det-v2",
+    "part": 1,
+    "members": 1958,
+    "size": 942899200,
+    "sha256": "291bcd88fca51dcddddf497ca61f77daf4e4ff2fba4382b070b5e7e6c056a899"
+  },
+  {
+    "name": "cotton-bollworm-det-v2-part-002.tar",
+    "dataset_slug": "cotton-bollworm-det-v2",
+    "part": 2,
+    "members": 1992,
+    "size": 943063040,
+    "sha256": "020abaf94b0c8aaa618a1a523b5d9708c60cc19706ec5bd8a9df2a94d3b1ca14"
+  },
+  {
+    "name": "cotton-bollworm-det-v2-part-003.tar",
+    "dataset_slug": "cotton-bollworm-det-v2",
+    "part": 3,
+    "members": 1984,
+    "size": 943267840,
+    "sha256": "1801b435c5da6291cfc2a49ff3abe2e5f26380c5984b21aed924ed85f45a4736"
+  },
+  {
+    "name": "cotton-bollworm-det-v2-part-004.tar",
+    "dataset_slug": "cotton-bollworm-det-v2",
+    "part": 4,
+    "members": 412,
+    "size": 196423680,
+    "sha256": "6436382c9598da60ee3c3c11e7489f45f82f846b291214bb39e22ddab4af6e7b"
+  },
+  {
+    "name": "karaagro-faw-larva-det-v2-1-part-001.tar",
+    "dataset_slug": "karaagro-faw-larva-det-v2-1",
+    "part": 1,
+    "members": 1148,
+    "size": 937789440,
+    "sha256": "1153fba71b23c907f51a72065651897683957fcc5f7201b2060e0a0ae530f3bc"
+  },
+  {
+    "name": "karaagro-faw-larva-det-v2-1-part-002.tar",
+    "dataset_slug": "karaagro-faw-larva-det-v2-1",
+    "part": 2,
+    "members": 1040,
+    "size": 940892160,
+    "sha256": "f5d9ad427571113bbd6e2c5f01bf0634f3c0db9741fce6df1768230bc3a4ffc2"
+  },
+  {
+    "name": "karaagro-faw-larva-det-v2-1-part-003.tar",
+    "dataset_slug": "karaagro-faw-larva-det-v2-1",
+    "part": 3,
+    "members": 1096,
+    "size": 942336000,
+    "sha256": "f15e7bd35112a5302a5e9ac6d32646f8211713fc8a3c1d445ae35d1c8a4cdc8f"
+  },
+  {
+    "name": "karaagro-faw-larva-det-v2-1-part-004.tar",
+    "dataset_slug": "karaagro-faw-larva-det-v2-1",
+    "part": 4,
+    "members": 906,
+    "size": 940032000,
+    "sha256": "dc4426e8e6155584546d5972b8bf416aacd73d8808da2191c1b0fddaf802ebf0"
+  },
+  {
+    "name": "karaagro-faw-larva-det-v2-1-part-005.tar",
+    "dataset_slug": "karaagro-faw-larva-det-v2-1",
+    "part": 5,
+    "members": 1054,
+    "size": 943032320,
+    "sha256": "d7ba8f8360032408f43626685bc1ea9dafdff5a32526e4fddc6a575f714534c5"
+  },
+  {
+    "name": "karaagro-faw-larva-det-v2-1-part-006.tar",
+    "dataset_slug": "karaagro-faw-larva-det-v2-1",
+    "part": 6,
+    "members": 178,
+    "size": 145899520,
+    "sha256": "3d569f534e50a2ced393b7b3cab8e027815f6f8b273a200033038786ca16076e"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "id": "corn_leaf_disease_v2_research_candidate",
+  "slug": "corn-leaf-disease-v2",
+  "task": "classification",
+  "classes": [
+    "bacterial_leaf_streak",
+    "common_rust",
+    "curvularia_leaf_spot",
+    "eyespot",
+    "gray_leaf_spot",
+    "healthy",
+    "northern_leaf_blight",
+    "southern_leaf_blight",
+    "southern_rust"
+  ],
+  "total_images": 6519,
+  "source_counts": {
+    "plantvillage": 3844,
+    "cornleaf": 219,
+    "idadp": 99,
+    "makerere": 2000,
+    "sb4": 203,
+    "tom2024": 154
+  },
+  "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+  "limitations": [
+    "Research-only; no independent China-field blind test.",
+    "Several rare-class validation supports are only 19-31 images.",
+    "No calibrated unknown/OOD rejection threshold."
+  ],
+  "class_image_counts": {
+    "train": {
+      "bacterial_leaf_streak": 75,
+      "common_rust": 951,
+      "curvularia_leaf_spot": 123,
+      "eyespot": 87,
+      "gray_leaf_spot": 413,
+      "healthy": 1733,
+      "northern_leaf_blight": 1588,
+      "southern_leaf_blight": 152,
+      "southern_rust": 79
+    },
+    "val": {
+      "bacterial_leaf_streak": 19,
+      "common_rust": 237,
+      "curvularia_leaf_spot": 31,
+      "eyespot": 22,
+      "gray_leaf_spot": 98,
+      "healthy": 429,
+      "northern_leaf_blight": 395,
+      "southern_leaf_blight": 67,
+      "southern_rust": 20
+    }
+  }
+}

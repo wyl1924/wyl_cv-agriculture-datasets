@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "id": "karaagro_faw_larva_detector_v2_1_research_candidate",
+  "slug": "karaagro-faw-larva-det-v2-1",
+  "task": "detection",
+  "classes": [
+    "fall_armyworm_larva"
+  ],
+  "total_images": 2711,
+  "source_counts": {
+    "harvard_karaagro_v4.1": 2711
+  },
+  "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+  "limitations": [
+    "Human-assisted internal trial only; the earlier strict smoke gate remains failed.",
+    "Ghana-source internal split, not an independent China-field blind test.",
+    "Only visible larvae are outputs; damage, frass, and eggs are excluded."
+  ],
+  "image_strata_counts": {
+    "train": {
+      "positive": 1071,
+      "negative": 1072
+    },
+    "val": {
+      "positive": 284,
+      "negative": 284
+    }
+  },
+  "target_box_counts": {
+    "train": {
+      "fall_armyworm_larva": 1098
+    },
+    "val": {
+      "fall_armyworm_larva": 284
+    }
+  }
+}

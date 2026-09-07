@@ -1,0 +1,5 @@
+path: datasets/cotton-bollworm-det-v2
+train: images/train
+val: images/val
+names:
+  0: cotton_bollworm

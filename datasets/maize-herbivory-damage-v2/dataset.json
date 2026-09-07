@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "id": "maize_herbivory_damage_v2_research_candidate",
+  "slug": "maize-herbivory-damage-v2",
+  "task": "classification",
+  "classes": [
+    "frugiperda",
+    "ipsilon",
+    "litura",
+    "separata"
+  ],
+  "total_images": 14577,
+  "source_counts": {
+    "zenodo_maize_herbivory_v1_1_0": 14577
+  },
+  "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+  "limitations": [
+    "Laboratory flatbed-scanned feeding damage, not field imagery.",
+    "Labels identify the controlled feeding treatment; insect bodies need not be visible.",
+    "Only 132 physical-leaf capture groups and no calibrated OOD rejection threshold."
+  ],
+  "class_image_counts": {
+    "train": {
+      "frugiperda": 2302,
+      "ipsilon": 3487,
+      "litura": 3323,
+      "separata": 2550
+    },
+    "val": {
+      "frugiperda": 575,
+      "ipsilon": 872,
+      "litura": 830,
+      "separata": 638
+    }
+  }
+}

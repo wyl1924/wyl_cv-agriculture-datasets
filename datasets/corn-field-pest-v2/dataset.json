@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "corn_field_pest_v2_research_candidate",
+  "slug": "corn-field-pest-v2",
+  "task": "classification",
+  "classes": [
+    "fall_armyworm",
+    "grasshopper_unknown",
+    "healthy",
+    "leaf_beetle_unknown",
+    "maize_aphid_unknown"
+  ],
+  "total_images": 2898,
+  "source_counts": {
+    "ccmt": 2084,
+    "tom2024": 737,
+    "yeesi": 77
+  },
+  "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+  "limitations": [
+    "Research-only coarse whole-image classification.",
+    "Grasshopper, leaf beetle, and aphid labels intentionally make no species claim.",
+    "No calibrated unknown/OOD rejection threshold."
+  ],
+  "class_image_counts": {
+    "train": {
+      "fall_armyworm": 557,
+      "grasshopper_unknown": 538,
+      "healthy": 417,
+      "leaf_beetle_unknown": 745,
+      "maize_aphid_unknown": 62
+    },
+    "val": {
+      "fall_armyworm": 139,
+      "grasshopper_unknown": 135,
+      "healthy": 104,
+      "leaf_beetle_unknown": 186,
+      "maize_aphid_unknown": 15
+    }
+  }
+}

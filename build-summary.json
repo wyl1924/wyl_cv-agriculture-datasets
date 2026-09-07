@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "release_id": "agriculture-v2-research-datasets-2026-09-07",
+  "status": "locally_verified_pending_upload",
+  "datasets": [
+    {
+      "schema_version": 1,
+      "id": "corn_leaf_disease_v2_research_candidate",
+      "slug": "corn-leaf-disease-v2",
+      "task": "classification",
+      "classes": [
+        "bacterial_leaf_streak",
+        "common_rust",
+        "curvularia_leaf_spot",
+        "eyespot",
+        "gray_leaf_spot",
+        "healthy",
+        "northern_leaf_blight",
+        "southern_leaf_blight",
+        "southern_rust"
+      ],
+      "total_images": 6519,
+      "source_counts": {
+        "plantvillage": 3844,
+        "cornleaf": 219,
+        "idadp": 99,
+        "makerere": 2000,
+        "sb4": 203,
+        "tom2024": 154
+      },
+      "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+      "limitations": [
+        "Research-only; no independent China-field blind test.",
+        "Several rare-class validation supports are only 19-31 images.",
+        "No calibrated unknown/OOD rejection threshold."
+      ],
+      "class_image_counts": {
+        "train": {
+          "bacterial_leaf_streak": 75,
+          "common_rust": 951,
+          "curvularia_leaf_spot": 123,
+          "eyespot": 87,
+          "gray_leaf_spot": 413,
+          "healthy": 1733,
+          "northern_leaf_blight": 1588,
+          "southern_leaf_blight": 152,
+          "southern_rust": 79
+        },
+        "val": {
+          "bacterial_leaf_streak": 19,
+          "common_rust": 237,
+          "curvularia_leaf_spot": 31,
+          "eyespot": 22,
+          "gray_leaf_spot": 98,
+          "healthy": 429,
+          "northern_leaf_blight": 395,
+          "southern_leaf_blight": 67,
+          "southern_rust": 20
+        }
+      },
+      "original_bytes": 2213806754,
+      "published_bytes": 2134960693,
+      "changed_images": 2000,
+      "source_images_with_gps_ifd": 311,
+      "source_images_with_orientation_zero_normalized": 528,
+      "source_images_with_trailing_data_removed": 0,
+      "stripped_trailing_bytes": 0,
+      "removed_jpeg_markers": {
+        "APP1": 2000
+      },
+      "public_manifest_sha256": "8e8907e9fa95a5225c3816bc0b44f09c99d6b96b48770a009bfef88eaa811b72",
+      "assets": [
+        {
+          "name": "corn-leaf-disease-v2-part-001.tar",
+          "dataset_slug": "corn-leaf-disease-v2",
+          "part": 1,
+          "members": 2937,
+          "size": 942858240,
+          "sha256": "c7d97cd7eeadd0e7cd30babd6a659181a97624c9a3b9bde769c058fe991cd398"
+        },
+        {
+          "name": "corn-leaf-disease-v2-part-002.tar",
+          "dataset_slug": "corn-leaf-disease-v2",
+          "part": 2,
+          "members": 2681,
+          "size": 943646720,
+          "sha256": "76f941d9e038bf569462f826f69abdd9b9e3508203ef95152aae9036b52af657"
+        },
+        {
+          "name": "corn-leaf-disease-v2-part-003.tar",
+          "dataset_slug": "corn-leaf-disease-v2",
+          "part": 3,
+          "members": 901,
+          "size": 253480960,
+          "sha256": "1d9635cb0d454571da11d418db50d3d0f42ed277c93f981aadcbdfd7a19e4200"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "corn_field_pest_v2_research_candidate",
+      "slug": "corn-field-pest-v2",
+      "task": "classification",
+      "classes": [
+        "fall_armyworm",
+        "grasshopper_unknown",
+        "healthy",
+        "leaf_beetle_unknown",
+        "maize_aphid_unknown"
+      ],
+      "total_images": 2898,
+      "source_counts": {
+        "ccmt": 2084,
+        "tom2024": 737,
+        "yeesi": 77
+      },
+      "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+      "limitations": [
+        "Research-only coarse whole-image classification.",
+        "Grasshopper, leaf beetle, and aphid labels intentionally make no species claim.",
+        "No calibrated unknown/OOD rejection threshold."
+      ],
+      "class_image_counts": {
+        "train": {
+          "fall_armyworm": 557,
+          "grasshopper_unknown": 538,
+          "healthy": 417,
+          "leaf_beetle_unknown": 745,
+          "maize_aphid_unknown": 62
+        },
+        "val": {
+          "fall_armyworm": 139,
+          "grasshopper_unknown": 135,
+          "healthy": 104,
+          "leaf_beetle_unknown": 186,
+          "maize_aphid_unknown": 15
+        }
+      },
+      "original_bytes": 405100373,
+      "published_bytes": 399948414,
+      "changed_images": 77,
+      "source_images_with_gps_ifd": 30,
+      "source_images_with_orientation_zero_normalized": 69,
+      "source_images_with_trailing_data_removed": 5,
+      "stripped_trailing_bytes": 1922379,
+      "removed_jpeg_markers": {
+        "APP1": 77,
+        "APP2": 5,
+        "APP6": 5
+      },
+      "public_manifest_sha256": "b8c1970e6d60ee51c643f9b93837425e85e1db509eac2c32859e40ffc3dedb52",
+      "assets": [
+        {
+          "name": "corn-field-pest-v2-part-001.tar",
+          "dataset_slug": "corn-field-pest-v2",
+          "part": 1,
+          "members": 2898,
+          "size": 402186240,
+          "sha256": "4abc66cca1e9b28a979ebb3305ded449fbb08bbbec8f4cac5a795f2f4440958a"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "maize_herbivory_damage_v2_research_candidate",
+      "slug": "maize-herbivory-damage-v2",
+      "task": "classification",
+      "classes": [
+        "frugiperda",
+        "ipsilon",
+        "litura",
+        "separata"
+      ],
+      "total_images": 14577,
+      "source_counts": {
+        "zenodo_maize_herbivory_v1_1_0": 14577
+      },
+      "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+      "limitations": [
+        "Laboratory flatbed-scanned feeding damage, not field imagery.",
+        "Labels identify the controlled feeding treatment; insect bodies need not be visible.",
+        "Only 132 physical-leaf capture groups and no calibrated OOD rejection threshold."
+      ],
+      "class_image_counts": {
+        "train": {
+          "frugiperda": 2302,
+          "ipsilon": 3487,
+          "litura": 3323,
+          "separata": 2550
+        },
+        "val": {
+          "frugiperda": 575,
+          "ipsilon": 872,
+          "litura": 830,
+          "separata": 638
+        }
+      },
+      "original_bytes": 86965818,
+      "published_bytes": 86319058,
+      "changed_images": 7030,
+      "source_images_with_gps_ifd": 0,
+      "source_images_with_orientation_zero_normalized": 0,
+      "source_images_with_trailing_data_removed": 0,
+      "stripped_trailing_bytes": 0,
+      "removed_jpeg_markers": {
+        "APP1": 7030
+      },
+      "public_manifest_sha256": "9a8e97b115c73558e589b0baa001ceb737142aebcde076184cfca175efe70141",
+      "assets": [
+        {
+          "name": "maize-herbivory-damage-v2-part-001.tar",
+          "dataset_slug": "maize-herbivory-damage-v2",
+          "part": 1,
+          "members": 14577,
+          "size": 97525760,
+          "sha256": "10fab8bfb644cb9bb3c39956603b3b8f7cdcb27c9068b265206b9556b6b0b9ee"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "cotton_bollworm_detector_v2_seed",
+      "slug": "cotton-bollworm-det-v2",
+      "task": "detection",
+      "classes": [
+        "cotton_bollworm"
+      ],
+      "total_images": 3173,
+      "source_counts": {
+        "sciencedb_cottoninsect_v2": 3173
+      },
+      "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+      "limitations": [
+        "Cotton-field auxiliary seed; not maize-field coverage.",
+        "Validation uses an exact/near-duplicate proxy split, not an independent site/date holdout.",
+        "The 0.25 confidence filter is uncalibrated and every box requires review."
+      ],
+      "image_strata_counts": {
+        "train": {
+          "positive": 426,
+          "negative": 2112
+        },
+        "val": {
+          "positive": 107,
+          "negative": 528
+        }
+      },
+      "target_box_counts": {
+        "train": {
+          "cotton_bollworm": 426
+        },
+        "val": {
+          "cotton_bollworm": 107
+        }
+      },
+      "original_bytes": 3021305467,
+      "published_bytes": 3021305467,
+      "changed_images": 0,
+      "source_images_with_gps_ifd": 0,
+      "source_images_with_orientation_zero_normalized": 0,
+      "source_images_with_trailing_data_removed": 0,
+      "stripped_trailing_bytes": 0,
+      "removed_jpeg_markers": {},
+      "public_manifest_sha256": "7af9774219cbda4db5d35d2acc352a1404537e23bc2e947da06338a094383622",
+      "assets": [
+        {
+          "name": "cotton-bollworm-det-v2-part-001.tar",
+          "dataset_slug": "cotton-bollworm-det-v2",
+          "part": 1,
+          "members": 1958,
+          "size": 942899200,
+          "sha256": "291bcd88fca51dcddddf497ca61f77daf4e4ff2fba4382b070b5e7e6c056a899"
+        },
+        {
+          "name": "cotton-bollworm-det-v2-part-002.tar",
+          "dataset_slug": "cotton-bollworm-det-v2",
+          "part": 2,
+          "members": 1992,
+          "size": 943063040,
+          "sha256": "020abaf94b0c8aaa618a1a523b5d9708c60cc19706ec5bd8a9df2a94d3b1ca14"
+        },
+        {
+          "name": "cotton-bollworm-det-v2-part-003.tar",
+          "dataset_slug": "cotton-bollworm-det-v2",
+          "part": 3,
+          "members": 1984,
+          "size": 943267840,
+          "sha256": "1801b435c5da6291cfc2a49ff3abe2e5f26380c5984b21aed924ed85f45a4736"
+        },
+        {
+          "name": "cotton-bollworm-det-v2-part-004.tar",
+          "dataset_slug": "cotton-bollworm-det-v2",
+          "part": 4,
+          "members": 412,
+          "size": 196423680,
+          "sha256": "6436382c9598da60ee3c3c11e7489f45f82f846b291214bb39e22ddab4af6e7b"
+        }
+      ]
+    },
+    {
+      "schema_version": 1,
+      "id": "karaagro_faw_larva_detector_v2_1_research_candidate",
+      "slug": "karaagro-faw-larva-det-v2-1",
+      "task": "detection",
+      "classes": [
+        "fall_armyworm_larva"
+      ],
+      "total_images": 2711,
+      "source_counts": {
+        "harvard_karaagro_v4.1": 2711
+      },
+      "privacy_transform": "lossless_jpeg_metadata_strip_preserve_orientation_v2",
+      "limitations": [
+        "Human-assisted internal trial only; the earlier strict smoke gate remains failed.",
+        "Ghana-source internal split, not an independent China-field blind test.",
+        "Only visible larvae are outputs; damage, frass, and eggs are excluded."
+      ],
+      "image_strata_counts": {
+        "train": {
+          "positive": 1071,
+          "negative": 1072
+        },
+        "val": {
+          "positive": 284,
+          "negative": 284
+        }
+      },
+      "target_box_counts": {
+        "train": {
+          "fall_armyworm_larva": 1098
+        },
+        "val": {
+          "fall_armyworm_larva": 284
+        }
+      },
+      "original_bytes": 4988870854,
+      "published_bytes": 4845794027,
+      "changed_images": 1804,
+      "source_images_with_gps_ifd": 599,
+      "source_images_with_orientation_zero_normalized": 945,
+      "source_images_with_trailing_data_removed": 0,
+      "stripped_trailing_bytes": 0,
+      "removed_jpeg_markers": {
+        "APP1": 1850,
+        "APP10": 75,
+        "APP5": 439,
+        "APP6": 439,
+        "APP7": 439,
+        "APP8": 425,
+        "COM": 92
+      },
+      "public_manifest_sha256": "01c2cd125af3e46601b8522451a1cfa84e50a56e4396d1dec6d9c5d3e0fc1aa0",
+      "assets": [
+        {
+          "name": "karaagro-faw-larva-det-v2-1-part-001.tar",
+          "dataset_slug": "karaagro-faw-larva-det-v2-1",
+          "part": 1,
+          "members": 1148,
+          "size": 937789440,
+          "sha256": "1153fba71b23c907f51a72065651897683957fcc5f7201b2060e0a0ae530f3bc"
+        },
+        {
+          "name": "karaagro-faw-larva-det-v2-1-part-002.tar",
+          "dataset_slug": "karaagro-faw-larva-det-v2-1",
+          "part": 2,
+          "members": 1040,
+          "size": 940892160,
+          "sha256": "f5d9ad427571113bbd6e2c5f01bf0634f3c0db9741fce6df1768230bc3a4ffc2"
+        },
+        {
+          "name": "karaagro-faw-larva-det-v2-1-part-003.tar",
+          "dataset_slug": "karaagro-faw-larva-det-v2-1",
+          "part": 3,
+          "members": 1096,
+          "size": 942336000,
+          "sha256": "f15e7bd35112a5302a5e9ac6d32646f8211713fc8a3c1d445ae35d1c8a4cdc8f"
+        },
+        {
+          "name": "karaagro-faw-larva-det-v2-1-part-004.tar",
+          "dataset_slug": "karaagro-faw-larva-det-v2-1",
+          "part": 4,
+          "members": 906,
+          "size": 940032000,
+          "sha256": "dc4426e8e6155584546d5972b8bf416aacd73d8808da2191c1b0fddaf802ebf0"
+        },
+        {
+          "name": "karaagro-faw-larva-det-v2-1-part-005.tar",
+          "dataset_slug": "karaagro-faw-larva-det-v2-1",
+          "part": 5,
+          "members": 1054,
+          "size": 943032320,
+          "sha256": "d7ba8f8360032408f43626685bc1ea9dafdff5a32526e4fddc6a575f714534c5"
+        },
+        {
+          "name": "karaagro-faw-larva-det-v2-1-part-006.tar",
+          "dataset_slug": "karaagro-faw-larva-det-v2-1",
+          "part": 6,
+          "members": 178,
+          "size": 145899520,
+          "sha256": "3d569f534e50a2ced393b7b3cab8e027815f6f8b273a200033038786ca16076e"
+        }
+      ]
+    }
+  ],
+  "total_images": 29878,
+  "total_original_bytes": 10716049266,
+  "total_published_bytes": 10488327659,
+  "asset_count": 15,
+  "asset_bytes": 10515333120,
+  "archive_verification": {
+    "members": 35762,
+    "member_bytes": 10488431069
+  }
+}

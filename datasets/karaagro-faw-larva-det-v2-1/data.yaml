@@ -1,0 +1,5 @@
+path: datasets/karaagro-faw-larva-det-v2-1
+train: images/train
+val: images/val
+names:
+  0: fall_armyworm_larva
